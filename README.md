@@ -7,5 +7,3 @@
 ```js
 npm install
 ```
-
-This project use:
