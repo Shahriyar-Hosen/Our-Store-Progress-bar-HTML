@@ -20,5 +20,5 @@ This project use:
 ### NPM scripts - prefix with npm run
 
 ```js
-check - types; // ts types check
+
 ```
