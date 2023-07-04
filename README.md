@@ -22,5 +22,4 @@ This project use:
 ```js
 check - types; // ts types check
 check - format; // checking formatted code with prettier
-check - lint; // checking lint errors
 ```
