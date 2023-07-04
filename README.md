@@ -28,5 +28,3 @@ format; // autoformat code
 test - all; // run all tests
 prepare; // getting husky ready with pre-commit hook
 ```
-
-Some
