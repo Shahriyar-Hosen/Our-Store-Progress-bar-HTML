@@ -12,4 +12,3 @@ This project use:
 
 - Typescript
 - eslint with airbnb style
-- TailwindsCSS v3
