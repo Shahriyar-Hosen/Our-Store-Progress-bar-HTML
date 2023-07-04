@@ -9,5 +9,3 @@ npm install
 ```
 
 This project use:
-
-- Typescript
