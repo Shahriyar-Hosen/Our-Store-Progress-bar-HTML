@@ -29,4 +29,4 @@ test - all; // run all tests
 prepare; // getting husky ready with pre-commit hook
 ```
 
-Some eslint rules are ignored in .
+Some eslint rules are ignored
