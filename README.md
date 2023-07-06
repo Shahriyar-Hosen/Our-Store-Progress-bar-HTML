@@ -1,1 +1,1 @@
-# Our Store Progress bar-HTML
+# Our Store Progress bar HTML
