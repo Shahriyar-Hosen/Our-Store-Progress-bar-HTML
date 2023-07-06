@@ -2,4 +2,4 @@
 
 - Only HTML And CSS
 - Using inline styles
-- Using svg for dot
+- Using SVG for dot
