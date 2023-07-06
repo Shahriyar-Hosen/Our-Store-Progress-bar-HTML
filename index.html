@@ -3,17 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font-family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
     <title>Our Store Progress-bar HTML</title>
   </head>
   <body style="font-family: 'Inter', sans-serif; margin: 0; padding: 0">
     <main>
-      <div style="margin: 50px auto">
+      <section style="margin: 50px auto">
         <h1
           style="
             margin: 0;
@@ -29,7 +32,7 @@
           Our <span style="background-color: #256bee; color: white">Story</span>
         </h1>
 
-        <section
+        <main
           style="
             width: 100%;
             padding-top: 56px;
@@ -37,90 +40,95 @@
             margin: 0 auto;
           "
         >
-          <div style="width: 100%">
-            <div style="position: relative">
+          <div style="position: relative; width: 100%">
+            <!-- Main line -->
+            <div
+              style="
+                width: 6px;
+                background-color: #256bee;
+                height: 100px;
+                margin: 0 auto;
+              "
+            ></div>
+
+            <!-- Main section -->
+            <div
+              style="
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+                align-items: center;
+                gap: 11px;
+                width: 100;
+                width: 100%;
+                position: absolute;
+                left: -332px;
+                bottom: -46.5px;
+              "
+            >
+              <!-- Dot Icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 35 36"
+                fill="none"
+              >
+                <circle cx="17.5" cy="17.8381" r="17.5" fill="#256BEE" />
+              </svg>
+
+              <!-- small line -->
               <div
-                style="
-                  width: 6px;
-                  background-color: #256bee;
-                  height: 100px;
-                  margin: 0 auto;
-                "
+                style="width: 52px; height: 3px; background-color: #256bee"
               ></div>
 
+              <!-- content section  -->
               <div
                 style="
-                  display: flex;
-                  flex-direction: row-reverse;
-                  justify-content: center;
-                  align-items: center;
-                  gap: 11px;
-                  width: 100;
+                  position: relative;
+                  text-align: end;
                   width: 100%;
-                  position: absolute;
-                  left: -332px;
-                  bottom: -46.5px;
+                  max-width: 590px;
+                  text-align: end;
                 "
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="35"
-                  height="35"
-                  viewBox="0 0 35 36"
-                  fill="none"
-                >
-                  <circle cx="17.5" cy="17.8381" r="17.5" fill="#256BEE" />
-                </svg>
-
-                <div
-                  style="width: 52px; height: 3px; background-color: #256bee"
-                ></div>
-
-                <div
+                <!-- Title === Year -->
+                <h3
                   style="
-                    position: relative;
-                    text-align: end;
-                    width: 100%;
-                    max-width: 590px;
-                    text-align: end;
+                    margin: 0;
+                    padding: 0;
+                    color: #256bee;
+                    font-size: 50px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
                   "
                 >
-                  <h3
-                    style="
-                      margin: 0;
-                      padding: 0;
-                      color: #256bee;
-                      font-size: 50px;
-                      font-style: normal;
-                      font-weight: 700;
-                      line-height: normal;
-                    "
-                  >
-                    2015
-                  </h3>
+                  2015
+                </h3>
 
-                  <p
-                    style="
-                      position: absolute;
-                      margin: 0;
-                      padding: 0;
-                      color: #333;
-                      font-size: 20px;
-                      font-style: normal;
-                      font-weight: 400;
-                      line-height: 30px;
-                      width: 100%;
-                    "
-                  >
-                    First Employee. Fully focus on writing and creating content
-                    for more and more Clients.
-                  </p>
-                </div>
+                <!-- Story Description -->
+                <p
+                  style="
+                    position: absolute;
+                    margin: 0;
+                    padding: 0;
+                    color: #333;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                    width: 100%;
+                  "
+                >
+                  First Employee. Fully focus on writing and creating content
+                  for more and more Clients.
+                </p>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </main>
+      </section>
     </main>
   </body>
 </html>
