@@ -4,3 +4,4 @@
 - Using inline styles
 - Using SVG for dot
 - Full Responsible
+- Responsible for Desktop Tablet and Mobile
