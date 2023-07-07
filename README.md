@@ -8,4 +8,4 @@
 - Full Responsible
 - Responsible for Desktop Tablet and Mobile
 
-- [] Design for Desktop === **`index.html`**
+- [x] Design for Desktop === **`index.html`**
