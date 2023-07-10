@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2e364a;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.container {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.text-box {
+  padding: 20px 30px;
+  background: #ffffff;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.container-l {
+  left: 0;
+}
+.container-r {
+  left: 50%;
+}
