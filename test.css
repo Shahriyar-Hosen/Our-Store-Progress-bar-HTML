@@ -1,11 +1,15 @@
 .timeline {
   position: relative;
   width: 100%;
-  max-width: 1060px;
+  /* max-width: 1060px; */
   margin: 0 auto;
   margin-top: 20px;
   padding: 1em 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .timeline:before {
@@ -36,14 +40,18 @@
 
 .direction-l {
   position: relative;
-  width: 500px;
+  /* width: 500px; */
+  width: 50%;
+  max-width: 500px;
   float: left;
   text-align: right;
 }
 
 .direction-r {
   position: relative;
-  width: 500px;
+  /* width: 500px; */
+  width: 50%;
+  max-width: 500px;
   float: right;
 }
 
