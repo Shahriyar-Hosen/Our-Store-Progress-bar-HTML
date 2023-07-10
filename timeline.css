@@ -16,10 +16,9 @@ body {
 }
 
 .container {
-  padding: 10px 50px;
   position: relative;
+  padding: 10px 50px;
   width: 50%;
-  background: rgba(0, 0, 0, 0.3);
 }
 
 .text-box {
@@ -27,6 +26,7 @@ body {
   background: #ffffff;
   border-radius: 15px;
   font-size: 15px;
+  position: relative;
 }
 
 .container-l {
@@ -34,4 +34,63 @@ body {
 }
 .container-r {
   left: 50%;
+}
+
+.container img {
+  position: absolute;
+  width: 40px;
+  border: 50%;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+}
+
+.container-r img {
+  left: -20px;
+}
+
+.timeline::after {
+  content: " ";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #ffffff;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+}
+
+.text-box h2 {
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.text-box small {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.left-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #ffffff;
+  right: -15px;
+}
+
+.right-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #ffffff;
+  left: -15px;
 }
