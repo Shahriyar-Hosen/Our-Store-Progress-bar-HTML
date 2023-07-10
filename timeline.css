@@ -136,3 +136,36 @@ body {
   border-right: 15px solid #ffffff;
   left: -15px;
 }
+
+@media screen and (max-width: 768px) {
+  .timeline {
+    margin: 50px auto;
+  }
+  .timeline::after {
+    left: 31px;
+  }
+  .container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .text-box {
+    font-size: 13px;
+  }
+  .text-box small {
+    margin-bottom: 10px;
+  }
+  .container-r {
+    left: 0;
+  }
+  .container-l img,
+  .container-r img {
+    left: 10px;
+  }
+  .left-arrow,
+  .right-arrow {
+    border-right: 15px solid #ffffff;
+    border-left: 0;
+    left: -15px;
+  }
+}
