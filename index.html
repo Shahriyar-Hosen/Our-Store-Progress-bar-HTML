@@ -4,129 +4,386 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- font-family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-
     <title>Our Store Progress-bar HTML</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+      }
+
+      .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 56px auto;
+      }
+
+      .container {
+        position: relative;
+        padding: 10px 50px;
+        width: 50%;
+        animation: moveDown 6s linear forwards;
+        opacity: 0;
+      }
+
+      @keyframes moveDown {
+        0% {
+          opacity: 1;
+          transform: translateY(-30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .container:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .container:nth-child(2) {
+        animation-delay: 1s;
+      }
+      .container:nth-child(3) {
+        animation-delay: 2s;
+      }
+      .container:nth-child(4) {
+        animation-delay: 3s;
+      }
+      .container:nth-child(5) {
+        animation-delay: 4s;
+      }
+      .container:nth-child(6) {
+        animation-delay: 5s;
+      }
+      .container:nth-child(7) {
+        animation-delay: 6s;
+      }
+
+      .text-box {
+        padding: 20px 55px;
+        background: transparent;
+        font-size: 15px;
+        position: relative;
+      }
+
+      .container-l {
+        left: 0;
+      }
+      .container-r {
+        left: 50%;
+      }
+
+      .container svg {
+        position: absolute;
+        width: 35px;
+        border: 50%;
+        right: -17.5px;
+        top: 32px;
+        z-index: 10;
+      }
+
+      .container-r svg {
+        left: -17.5px;
+      }
+
+      .timeline::after {
+        content: " ";
+        position: absolute;
+        width: 6px;
+        height: 100%;
+        padding-top: 56px;
+        background: #256bee;
+        top: 0;
+        left: 50%;
+        margin-left: -3px;
+        z-index: -1;
+        animation: moveLine 6s linear forwards;
+      }
+
+      @keyframes moveLine {
+        0% {
+          height: 0;
+        }
+        100% {
+          height: 100%;
+        }
+      }
+
+      .text-box h2 {
+        color: #256bee;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 10px;
+      }
+
+      .text-box p {
+        color: #333;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        width: 100%;
+      }
+
+      .container-l .text-box {
+        text-align: end;
+      }
+
+      .left-arrow {
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 38px;
+        z-index: 1;
+        border-top: 3px solid #256bee;
+        border-left: 52px solid #256bee;
+        right: -15px;
+      }
+
+      .right-arrow {
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 38px;
+        z-index: 1;
+        border-top: 3px solid #256bee;
+        border-left: 52px solid #256bee;
+        left: -15px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .timeline {
+          margin: 50px auto;
+        }
+        .timeline::after {
+          left: 20px;
+        }
+        .container {
+          width: 100%;
+          padding-left: 21px;
+          padding-right: 25px;
+        }
+        .text-box {
+          font-size: 13px;
+          padding: 20px;
+          padding-right: 0;
+        }
+
+        .container-l .text-box {
+          text-align: start;
+        }
+
+        .container-r {
+          left: 0;
+        }
+        .container-l img,
+        .container-r img {
+          width: 0;
+        }
+        .left-arrow,
+        .right-arrow {
+          display: none;
+        }
+      }
+    </style>
   </head>
-  <body style="font-family: 'Inter', sans-serif; margin: 0; padding: 0">
-    <main>
-      <section style="margin: 50px auto">
-        <h1
-          style="
-            margin: 0;
-            padding: 0;
-            color: #000;
-            text-align: center;
-            font-size: 50px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 69px;
-          "
-        >
-          Our <span style="background-color: #256bee; color: white">Story</span>
-        </h1>
 
-        <main
-          style="
-            width: 100%;
-            padding-top: 56px;
-            max-width: 1358px;
-            margin: 0 auto;
-          "
-        >
-          <div style="width: 100%">
-            <!-- Main section -->
-            <div
-              style="
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: start;
-                align-items: end;
-                gap: 11px;
-                max-width: 51.3%;
-                margin-top: -13.5px;
-              "
-            >
-              <div>
-                <!-- Main line -->
-                <div
-                  style="
-                    width: 6px;
-                    background-color: #256bee;
-                    height: 100px;
-                    margin: 0 auto;
-                  "
-                ></div>
-                <!-- Dot Icon -->
-                <div
-                  style="
-                    background-color: #256bee;
-                    min-width: 35px;
-                    min-height: 35px;
-                    border-radius: 50%;
-                  "
-                ></div>
-              </div>
+  <body>
+    <main style="margin: 50px auto">
+      <h1
+        style="
+          margin: 0;
+          padding: 0;
+          color: #000;
+          text-align: center;
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 69px;
+        "
+      >
+        Our <span style="background-color: #256bee; color: white">Story</span>
+      </h1>
+      <section class="timeline">
+        <section style="padding-top: 80px" class="container container-l">
+          <svg
+            style="margin-top: 72.5px"
+            width="35"
+            height="36"
+            viewBox="0 0 35 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              id="Ellipse 317"
+              cx="17.5"
+              cy="17.8381"
+              r="17.5"
+              fill="#256BEE"
+            />
+          </svg>
 
-              <!-- small line -->
-              <div style="margin-bottom: 15px">
-                <div
-                  style="width: 52px; height: 3px; background-color: #256bee"
-                ></div>
-              </div>
+          <div class="text-box">
+            <h2>2015</h2>
 
-              <!-- content section  -->
-              <div
-                style="
-                  text-align: end;
-                  width: 100%;
-                  height: 100%;
-                  max-width: 590px;
-                  text-align: end;
-                "
-              >
-                <!-- Title === Year -->
-                <h3
-                  style="
-                    margin: 0;
-                    padding: 0;
-                    color: #256bee;
-                    font-size: 50px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 50px;
-                  "
-                >
-                  <!-- <span style="content: ' '; padding-top: 10px"></span> -->
-                  2015
-                </h3>
-
-                <!-- Story Description -->
-                <p
-                  style="
-                    margin: 0;
-                    padding: 0;
-                    color: #333;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 30px;
-                    width: 100%;
-                  "
-                >
-                  First Employee. Fully focus on writing and creating content
-                  for more and more Clients.
-                </p>
-              </div>
-            </div>
+            <p>Moved to Singapore and bought the domain INSG.CO</p>
+            <span class="left-arrow"></span>
           </div>
-        </main>
+        </section>
+
+        <section class="container container-r">
+          <svg
+            width="35"
+            height="36"
+            viewBox="0 0 35 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              id="Ellipse 317"
+              cx="17.5"
+              cy="17.8381"
+              r="17.5"
+              fill="#256BEE"
+            />
+          </svg>
+          <div class="text-box">
+            <h2>2016</h2>
+
+            <p>Starting to blog about Social Media Marketing to help.</p>
+            <span class="right-arrow"></span>
+          </div>
+        </section>
+
+        <section class="container container-l">
+          <svg
+            width="35"
+            height="36"
+            viewBox="0 0 35 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              id="Ellipse 317"
+              cx="17.5"
+              cy="17.8381"
+              r="17.5"
+              fill="#256BEE"
+            />
+          </svg>
+          <div class="text-box">
+            <h2>2017</h2>
+
+            <p>
+              Few companies asked for help for Account Management and Influencer
+              Marketing on Facebook & Instagram.
+            </p>
+            <span class="left-arrow"></span>
+          </div>
+        </section>
+
+        <section class="container container-r">
+          <svg
+            width="35"
+            height="36"
+            viewBox="0 0 35 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              id="Ellipse 317"
+              cx="17.5"
+              cy="17.8381"
+              r="17.5"
+              fill="#256BEE"
+            />
+          </svg>
+          <div class="text-box">
+            <h2>2018</h2>
+
+            <p>
+              First Employee. Fully focus on writing and creating content for
+              more and more Clients.
+            </p>
+            <span class="right-arrow"></span>
+          </div>
+        </section>
+
+        <section class="container container-l">
+          <svg
+            width="35"
+            height="36"
+            viewBox="0 0 35 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              id="Ellipse 317"
+              cx="17.5"
+              cy="17.8381"
+              r="17.5"
+              fill="#256BEE"
+            />
+          </svg>
+          <div class="text-box">
+            <h2>2020</h2>
+
+            <p>414 Media is officialy born in Singapore</p>
+            <span class="left-arrow"></span>
+          </div>
+        </section>
+
+        <section class="container container-r">
+          <svg
+            width="35"
+            height="36"
+            viewBox="0 0 35 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              id="Ellipse 317"
+              cx="17.5"
+              cy="17.8381"
+              r="17.5"
+              fill="#256BEE"
+            />
+          </svg>
+          <div class="text-box">
+            <h2>2021</h2>
+
+            <p>We start writing Studies about Creators with Media Partners.</p>
+            <span class="right-arrow"></span>
+          </div>
+        </section>
+
+        <section class="container container-l">
+          <svg
+            width="35"
+            height="36"
+            viewBox="0 0 35 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              id="Ellipse 317"
+              cx="17.5"
+              cy="17.8381"
+              r="17.5"
+              fill="#256BEE"
+            />
+          </svg>
+          <div class="text-box">
+            <h2>2023</h2>
+
+            <p>400+ Quality Blog Posts, 100s of companies helped. Growing.</p>
+            <span class="left-arrow"></span>
+          </div>
+        </section>
       </section>
     </main>
   </body>
