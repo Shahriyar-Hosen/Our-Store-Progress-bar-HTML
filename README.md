@@ -17,10 +17,8 @@
 ## Example Video
 
 <video width="640" height="480" controls>
-  <source src="https://www.loom.com/share/a843e69be1ec4d9a84e40f88f4c193b2?sid=1debd408-8632-450f-a671-6425aece0571" type="video/mp4">
+  <source src="https://github.com/Shahriyar-Hosen/Our-Store-Progress-bar-HTML/assets/96829173/f2424f3b-ecf1-45fa-bde5-60bdca8ad944" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-
 https://github.com/Shahriyar-Hosen/Our-Store-Progress-bar-HTML/assets/96829173/f2424f3b-ecf1-45fa-bde5-60bdca8ad944
-
