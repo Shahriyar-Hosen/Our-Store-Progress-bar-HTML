@@ -1,4 +1,4 @@
-#
+<h1>Our Store Progress bar HTML</h1>
 
 ## Requirement
 
