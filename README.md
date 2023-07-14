@@ -1,4 +1,4 @@
-<h1>Our Store Progress bar HTML</h1>
+ <h1 align='center'>Our Store Progress bar HTML</h1>
 
 ## Requirement
 
