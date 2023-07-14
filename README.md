@@ -17,6 +17,6 @@
 ## Example Video
 
 <video width="640" height="480" controls>
-  <source src="./example-video.mp4" type="video/mp4">
+  <source src="https://github.com/Shahriyar-Hosen/Our-Store-Progress-bar-HTML/blob/main/example-video.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
