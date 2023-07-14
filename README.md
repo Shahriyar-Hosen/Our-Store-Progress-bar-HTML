@@ -12,4 +12,4 @@
 
 - [x] Design for Desktop === **`index.html`**
 - [x] Design for Tablet === **`tablet.html`**
-- [ ] Design for Mobile === **`mobile.html`**
+- [x] Design for Mobile === **`mobile.html`**
