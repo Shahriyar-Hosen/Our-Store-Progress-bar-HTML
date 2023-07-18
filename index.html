@@ -14,13 +14,13 @@
         box-sizing: border-box;
       }
 
-      .timeline {
+      .insg-timeline {
         position: relative;
         max-width: 1500px;
         margin: 56px auto;
       }
 
-      .container {
+      .insg-container {
         position: relative;
         padding: 10px 50px;
         width: 50%;
@@ -43,43 +43,43 @@
         }
       }
 
-      .container:nth-child(1) {
+      .insg-container:nth-child(1) {
         animation-delay: 0s;
       }
-      .container:nth-child(2) {
+      .insg-container:nth-child(2) {
         animation-delay: 1s;
       }
-      .container:nth-child(3) {
+      .insg-container:nth-child(3) {
         animation-delay: 1.8s;
       }
-      .container:nth-child(4) {
+      .insg-container:nth-child(4) {
         animation-delay: 2.7s;
       }
-      .container:nth-child(5) {
+      .insg-container:nth-child(5) {
         animation-delay: 3.5s;
       }
-      .container:nth-child(6) {
+      .insg-container:nth-child(6) {
         animation-delay: 4.3s;
       }
-      .container:nth-child(7) {
+      .insg-container:nth-child(7) {
         animation-delay: 5.1s;
       }
 
-      .text-box {
+      .insg-text-box {
         padding: 20px 55px;
         background: transparent;
         font-size: 15px;
         position: relative;
       }
 
-      .container-l {
+      .insg-container-l {
         left: 0;
       }
-      .container-r {
+      .insg-container-r {
         left: 50%;
       }
 
-      .container svg {
+      .insg-container svg {
         position: absolute;
         width: 35px;
         border: 50%;
@@ -88,11 +88,11 @@
         z-index: 10;
       }
 
-      .container-r svg {
+      .insg-container-r svg {
         left: -17.5px;
       }
 
-      .timeline::after {
+      .insg-timeline::after {
         content: " ";
         position: absolute;
         width: 6px;
@@ -118,7 +118,7 @@
         }
       }
 
-      .text-box h2 {
+      .insg-text-box h2 {
         color: #256bee;
         font-size: 50px;
         font-style: normal;
@@ -127,7 +127,7 @@
         margin-bottom: 10px;
       }
 
-      .text-box p {
+      .insg-text-box p {
         color: #333;
         font-size: 20px;
         font-style: normal;
@@ -135,11 +135,11 @@
         line-height: 30px;
       }
 
-      .container-l .text-box {
+      .insg-container-l .insg-text-box {
         text-align: end;
       }
 
-      .left-arrow {
+      .insg-left-arrow {
         height: 0;
         width: 0;
         position: absolute;
@@ -150,7 +150,7 @@
         right: -15px;
       }
 
-      .right-arrow {
+      .insg-right-arrow {
         height: 0;
         width: 0;
         position: absolute;
@@ -162,36 +162,36 @@
       }
 
       @media screen and (max-width: 768px) {
-        .timeline {
+        .insg-timeline {
           margin: 50px auto;
         }
-        .timeline::after {
+        .insg-timeline::after {
           left: 20px;
         }
-        .container {
+        .insg-container {
           width: 100%;
           padding-left: 21px;
           padding-right: 25px;
         }
-        .text-box {
+        .insg-text-box {
           font-size: 13px;
           padding: 20px;
           padding-right: 0;
         }
 
-        .container-l .text-box {
+        .insg-container-l .insg-text-box {
           text-align: start;
         }
 
-        .container-r {
+        .insg-container-r {
           left: 0;
         }
-        .container-l svg,
-        .container-r svg {
+        .insg-container-l svg,
+        .insg-container-r svg {
           width: 0;
         }
-        .left-arrow,
-        .right-arrow {
+        .insg-left-arrow,
+        .insg-right-arrow {
           display: none;
         }
       }
@@ -214,8 +214,11 @@
       >
         Our <span style="background-color: #256bee; color: white">Story</span>
       </h1>
-      <section class="timeline">
-        <section style="padding-top: 80px" class="container container-l">
+      <section class="insg-timeline">
+        <section
+          style="padding-top: 80px"
+          class="insg-container insg-container-l"
+        >
           <svg
             style="margin-top: 72.5px"
             width="35"
@@ -233,15 +236,15 @@
             />
           </svg>
 
-          <div class="text-box">
+          <div class="insg-text-box">
             <h2>2015</h2>
 
             <p>Moved to Singapore and bought the domain INSG.CO</p>
-            <span class="left-arrow"></span>
+            <span class="insg-left-arrow"></span>
           </div>
         </section>
 
-        <section class="container container-r">
+        <section class="insg-container insg-container-r">
           <svg
             width="35"
             height="36"
@@ -257,15 +260,15 @@
               fill="#256BEE"
             />
           </svg>
-          <div class="text-box">
+          <div class="insg-text-box">
             <h2>2016</h2>
 
             <p>Starting to blog about Social Media Marketing to help.</p>
-            <span class="right-arrow"></span>
+            <span class="insg-right-arrow"></span>
           </div>
         </section>
 
-        <section class="container container-l">
+        <section class="insg-container insg-container-l">
           <svg
             width="35"
             height="36"
@@ -281,18 +284,18 @@
               fill="#256BEE"
             />
           </svg>
-          <div class="text-box">
+          <div class="insg-text-box">
             <h2>2017</h2>
 
             <p>
               Few companies asked for help for Account Management and Influencer
               Marketing on Facebook & Instagram.
             </p>
-            <span class="left-arrow"></span>
+            <span class="insg-left-arrow"></span>
           </div>
         </section>
 
-        <section class="container container-r">
+        <section class="insg-container insg-container-r">
           <svg
             width="35"
             height="36"
@@ -308,18 +311,18 @@
               fill="#256BEE"
             />
           </svg>
-          <div class="text-box">
+          <div class="insg-text-box">
             <h2>2018</h2>
 
             <p>
               First Employee. Fully focus on writing and creating content for
               more and more Clients.
             </p>
-            <span class="right-arrow"></span>
+            <span class="insg-right-arrow"></span>
           </div>
         </section>
 
-        <section class="container container-l">
+        <section class="insg-container insg-container-l">
           <svg
             width="35"
             height="36"
@@ -335,15 +338,15 @@
               fill="#256BEE"
             />
           </svg>
-          <div class="text-box">
+          <div class="insg-text-box">
             <h2>2020</h2>
 
             <p>414 Media is officialy born in Singapore</p>
-            <span class="left-arrow"></span>
+            <span class="insg-left-arrow"></span>
           </div>
         </section>
 
-        <section class="container container-r">
+        <section class="insg-container insg-container-r">
           <svg
             width="35"
             height="36"
@@ -359,15 +362,15 @@
               fill="#256BEE"
             />
           </svg>
-          <div class="text-box">
+          <div class="insg-text-box">
             <h2>2021</h2>
 
             <p>We start writing Studies about Creators with Media Partners.</p>
-            <span class="right-arrow"></span>
+            <span class="insg-right-arrow"></span>
           </div>
         </section>
 
-        <section class="container container-l">
+        <section class="insg-container insg-container-l">
           <svg
             width="35"
             height="36"
@@ -383,11 +386,11 @@
               fill="#256BEE"
             />
           </svg>
-          <div class="text-box">
+          <div class="insg-text-box">
             <h2>2023</h2>
 
             <p>400+ Quality Blog Posts, 100s of companies helped. Growing.</p>
-            <span class="left-arrow"></span>
+            <span class="insg-left-arrow"></span>
           </div>
         </section>
       </section>
